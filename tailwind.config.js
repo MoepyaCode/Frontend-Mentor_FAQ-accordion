@@ -8,7 +8,23 @@ export default {
     backgroundColor: theme => ({
       ...theme('colors'),
     }),
-    extend: {},
+    extend: {
+      fontFamily: {
+        worksans: ['Work Sans', 'sans-serif'],
+      },
+      colors: {
+        pink: {
+          light: 'hsl(275, 100%, 97%)',
+        },
+        purple: {
+          grayish: 'hsl(292, 16%, 49%)',
+          dark: 'hsl(292, 42%, 14%)',
+        }
+      },
+      screens: {
+        xs: '375px',
+      }
+    },
   },
   plugins: [],
 }
